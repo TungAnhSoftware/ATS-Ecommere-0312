@@ -17,7 +17,7 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": "./tsconfig.json",
+    "project": "./ecom-fe-230312/tsconfig.json",
     "extraFileExtensions": [".css"]
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],

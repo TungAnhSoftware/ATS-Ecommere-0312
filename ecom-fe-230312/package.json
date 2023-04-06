@@ -11,6 +11,14 @@
     "prettier": "npx prettier --write ./src"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@mantine/carousel": "^6.0.6",
+    "@mantine/core": "^6.0.6",
+    "@mantine/form": "^6.0.6",
+    "@mantine/hooks": "^6.0.6",
+    "@mantine/modals": "^6.0.6",
+    "@mantine/notifications": "^6.0.6",
+    "embla-carousel-react": "^7.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.10.0"
