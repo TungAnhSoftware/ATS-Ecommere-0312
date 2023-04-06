@@ -2,6 +2,10 @@
 
 ### Install [pnpm](https://pnpm.io/installation)
 
+```sh
+For this project, we use **pnpm** to manage packages
+```
+
 ### Install dependencies
 
 ```sh
