@@ -1,10 +1,6 @@
 # FE Project Setup
 
-### Install pnpm
-
-```sh
-https://pnpm.io/installation
-```
+### Install [pnpm](https://pnpm.io/installation)
 
 ### Install dependencies
 
