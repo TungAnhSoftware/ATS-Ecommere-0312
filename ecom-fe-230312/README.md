@@ -4,7 +4,7 @@
 
 For this project, we use **pnpm** to manage packages
 
-NodeJS 16+ is required for pnpm, using [nvm](https://pnpm.io/installation) is recommended to manage node version
+NodeJS 16+ is required for pnpm, using [nvm](https://github.com/nvm-sh/nvm) is recommended to manage node version
 
 ## Install dependencies
 
