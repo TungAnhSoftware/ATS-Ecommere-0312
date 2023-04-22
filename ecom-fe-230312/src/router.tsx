@@ -7,6 +7,7 @@ import {
 import AppLayout from './layouts/AppLayout';
 import Page404 from './pages/Errors/404';
 import Home from './pages/Home';
+import ProductCart from './pages/ProductCart/ProductCart';
 
 export const ROUTER = {
   BASE: '/'
@@ -15,8 +16,9 @@ export const ROUTER = {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<AppLayout />}>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<ProductCart />} />
       <Route path="*" element={<Page404 />} />
+
     </Route>
   )
 );
