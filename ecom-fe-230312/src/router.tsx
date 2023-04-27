@@ -5,7 +5,7 @@ import {
   RouterProvider
 } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
-import ProductDetail from './pages/Detail/ProductDetail';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Page404 from './pages/Errors/404';
 
 export const ROUTER = {
