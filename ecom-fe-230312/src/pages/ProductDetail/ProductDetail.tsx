@@ -40,7 +40,7 @@ const ProductDetail = () => {
 
   return (
     <>
-      <Group>
+      <Group position="apart">
         <Header title="Wonderfull." />
         <ColorSelector options={phoneColors} />
       </Group>
