@@ -1,10 +1,10 @@
 import { Container, Group, Image, Space, Text, Title } from "@mantine/core"
 import Banner from "../../components/ProductDetail/Banner"
+import ColorSelector from "../../components/ProductDetail/ColorSelector"
 import DynamicButton from "../../components/ProductDetail/DynamicButton"
 import Header from "../../components/ProductDetail/Header"
 import bannerImage from '../../components/image/apple-banner.png'
 import bigImage from '../../components/image/big-bigger.jpg'
-import ColorSelector from "../../components/ProductDetail/ColorSelector"
 
 const ProductDetail = () => {
   const handleBuyItem = () => {

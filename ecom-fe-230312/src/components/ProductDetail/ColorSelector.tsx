@@ -1,12 +1,13 @@
-import { Radio } from "@mantine/core"
-import { useState } from "react"
+import { Radio } from "@mantine/core";
+import { useState } from "react";
 
 interface ColorSelectorProps {
   options: { value: string; label: string; }[],
 }
 
 const ColorSelector = ({ options } : ColorSelectorProps) => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState(options[0]['value']);
+  console.log(options[0]);
 
   return (
     <Radio.Group
@@ -19,7 +20,5 @@ const ColorSelector = ({ options } : ColorSelectorProps) => {
     </Radio.Group>
   )
 }
-
-
 
 export default ColorSelector
