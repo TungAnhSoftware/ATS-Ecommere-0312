@@ -13,28 +13,34 @@ const ProductDetail = () => {
 
   const phoneColors = [
     {
-      value: 'midnight',
-      label: 'Midnight'
+      id: 'midnight',
+      label: 'Midnight',
+      color: 'black'
     },
     {
-      value: 'starlight',
-      label: 'Starlight'
+      id: 'starlight',
+      label: 'Starlight',
+      color: 'grey'
     },
     {
-      value: 'red',
-      label: 'Red'
+      id: 'red',
+      label: 'Red',
+      color: 'red'
     },
     {
-      value: 'blue',
-      label: 'Blue'
+      id: 'blue',
+      label: 'Blue',
+      color: 'blue'
     },
     {
-      value: 'purple',
-      label: 'Purple'
+      id: 'purple',
+      label: 'Purple',
+      color: 'purple'
     },
     {
-      value: 'yellow',
-      label: 'Yellow'
+      id: 'yellow',
+      label: 'Yellow',
+      color: 'yellow'
     },
   ];
 
@@ -42,7 +48,7 @@ const ProductDetail = () => {
     <>
       <Group position="apart">
         <Header title="Wonderfull." />
-        <ColorSelector options={phoneColors} />
+        <ColorSelector colors={phoneColors} />
       </Group>
       <center>
         <Banner imgUrl={bannerImage} />

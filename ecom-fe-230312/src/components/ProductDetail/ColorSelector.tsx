@@ -1,23 +1,27 @@
-import { Radio } from "@mantine/core";
+import { Group, Radio, Text } from "@mantine/core";
 import { useState } from "react";
 
 interface ColorSelectorProps {
-  options: { value: string; label: string; }[],
+  colors: { id: string; label: string; color: string }[],
 }
 
-const ColorSelector = ({ options } : ColorSelectorProps) => {
-  const [value, setValue] = useState(options[0]['value']);
-  console.log(options[0]);
+const ColorSelector = ({ colors: colors }: ColorSelectorProps) => {
+  const [selectedValue, setValue] = useState(colors[0]['id']);
 
   return (
-    <Radio.Group
-      value={value}
-      onChange={setValue}
-    >
-      {options.map((color) => {
-        return <Radio value={color['value']} label={color['label']} />;
-      })}
-    </Radio.Group>
+    <Group mt="sm">
+      <Text fw={500}>{selectedValue}</Text>
+      <Radio.Group
+        value={selectedValue}
+        onChange={setValue}
+      >
+        <Group>
+          {colors.map((color) => {
+            return <Radio value={color['id']} style={{ backgroundColor: color['color'] }} />;
+          })}
+        </Group>
+      </Radio.Group>
+    </Group>
   )
 }
 
