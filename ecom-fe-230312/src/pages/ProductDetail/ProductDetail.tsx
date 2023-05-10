@@ -1,4 +1,4 @@
-import { Container, Group, Image, Space, Text, Title } from "@mantine/core"
+import { Card, Container, Group, Image, Space, Stack, Text, Title } from "@mantine/core"
 import Banner from "../../components/ProductDetail/Banner"
 import ColorSelector from "../../components/ProductDetail/ColorSelector"
 import DynamicButton from "../../components/ProductDetail/DynamicButton"
@@ -50,6 +50,7 @@ const ProductDetail = () => {
         <Header title="Wonderfull." />
         <ColorSelector colors={phoneColors} />
       </Group>
+
       <center>
         <Banner imgUrl={bannerImage} />
         <Space h='sm' />
@@ -57,11 +58,35 @@ const ProductDetail = () => {
         <Text fz='lg'>From $799 or $33.29/mo. for 24 mo. before trade‑in*</Text>
         <DynamicButton title="Buy" onClick={handleBuyItem} />
       </center>
+
       <Space h='xl' />
-      <Container size='xl'>
-        <Header title="Big and bigger." />
-        <Image src={bigImage} fit="fill" maw={680} />
-      </Container>
+
+      <Group position="center">
+        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          <Text align="center" fw={500} size={28}>Big and Bigger.</Text>
+          <Image src={bigImage} height={350} />
+          <Space h='sm' />
+          <Group position="center">
+            <Stack spacing={0} align="center" justify="center">
+              <Text size='lg' fw={500} color="dimmed">iPhone 14</Text>
+              <Text size={25} fw={700}>6.1″</Text>
+            </Stack>
+            <Stack spacing={0} align="center" justify="center">
+              <Text size='lg' fw={500} color="dimmed">iPhone 14 Plus</Text>
+              <Text size={25} fw={700}>6.7″</Text>
+            </Stack>
+          </Group>
+        </Card>
+        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          <Text align="center" fw={500} fz='ms' color="dimmed">iPhone 14 Plus</Text>
+          <Text
+            align="center" fw={500} fz='xl'
+            variant="gradient" gradient={{ from: 'green', to: 'darkgreen', deg: 45 }}
+          >
+            The looongest battery life of any iPhone. Ever.
+          </Text>
+        </Card>
+      </Group>
     </>
   )
 }
