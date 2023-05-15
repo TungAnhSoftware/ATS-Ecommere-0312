@@ -1,7 +1,7 @@
 import { Image } from "@mantine/core"
 
 interface BannerProps {
-  imgUrl: string,
+  imgUrl: string | null,
 }
 
 const Banner = ({ imgUrl }: BannerProps) => {
