@@ -1,4 +1,4 @@
-import { Card, Container, Group, Image, Space, Stack, Text, Title } from "@mantine/core"
+import { AspectRatio, BackgroundImage, Card, Container, Group, Image, Space, Stack, Text, Title } from "@mantine/core"
 import Banner from "../../components/ProductDetail/Banner"
 import ColorSelector from "../../components/ProductDetail/ColorSelector"
 import DynamicButton from "../../components/ProductDetail/DynamicButton"
@@ -7,10 +7,6 @@ import bannerImage from '../../components/image/apple-banner.png'
 import bigImage from '../../components/image/big-bigger.jpg'
 
 const ProductDetail = () => {
-  const handleBuyItem = () => {
-    console.log("Buy now");
-  }
-
   const phoneColors = [
     {
       id: 'midnight',
@@ -43,6 +39,10 @@ const ProductDetail = () => {
       color: 'yellow'
     },
   ];
+
+  const handleBuyItem = () => {
+    console.log("Buy now");
+  }
 
   return (
     <>
@@ -113,6 +113,60 @@ const ProductDetail = () => {
           <Image src={null} width={300} height={200} withPlaceholder />
         </Card>
       </Group>
+
+      <Space h='sm' />
+
+      <Group position="center">
+        <Stack spacing='xs'>
+          <Card shadow="sm" padding='lg' radius='xl' withBorder>
+            <Text fw={700} fz='xl' variant="gradient" gradient={{ from: 'purple', to: 'pink', deg: 45 }}>A15 Bionic chip.</Text>
+            <Text align="center">Fast that lasts.</Text>
+          </Card>
+          <Card shadow="sm" padding='lg' radius='xl' withBorder>
+            <Text align="center" fw={700} fz='xs' variant="gradient" gradient={{ from: 'purple', to: 'pink', deg: 45 }}>Superspeedy</Text>
+            <Text align="center" fw={700} fz='xl' variant="gradient" gradient={{ from: 'purple', to: 'pink', deg: 45 }}>5G</Text>
+          </Card>
+        </Stack>
+        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          <Text fw={500} fz='lg' color="dimmed" align="center">Pro-level camera.</Text>
+          <Text fw={500} fz='xl' color="grey" align="center">Whoa-level pics.</Text>
+          <Space h='sm' />
+          <Image src={null} width={300} height={200} withPlaceholder />
+        </Card>
+      </Group>
+
+      <Space h='sm' />
+
+      <Group position="center">
+        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          <Image src={null} height={150} withPlaceholder />
+          <Text fw={500} fz='xl'>Emergency SOS via satellite</Text>
+        </Card>
+        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          <Image src={null} width={150} height={150} withPlaceholder />
+          <Text fw={700} fz='xl'>Crash Detection</Text>
+        </Card>
+      </Group>
+
+      <Space h='sm' />
+
+      <Group position="center">
+        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          <Text fw={500} fz='md' color="dimmed" align="center">Personalization</Text>
+          <Text fw={700} fz='xl' color="dimmed" align="center">Your photo. Your font.</Text>
+          <Text fw={700} fz='xl' color="dimmed" align="center">Your widgets. Your iPhone.</Text>
+          <Image src={null} height={150} withPlaceholder />
+        </Card>
+        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          <Image src={null} height={150} withPlaceholder />
+          <Text fw={700} fz='xl' align="center">Sharper, smarter,</Text>
+          <Text fw={700} fz='xl' align="center">snappier selfies.</Text>
+        </Card>
+      </Group>
+
+      <Space h={100} />
+
+      <Title>Ways to save on iPhone.</Title>
     </>
   )
 }
