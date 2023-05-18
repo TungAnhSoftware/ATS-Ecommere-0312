@@ -1,10 +1,11 @@
-import { AspectRatio, BackgroundImage, Card, Container, Group, Image, Space, Stack, Text, Title } from "@mantine/core"
+import { Anchor, AspectRatio, BackgroundImage, Card, Container, Group, Image, Space, Stack, Text, Title } from "@mantine/core"
 import Banner from "../../components/ProductDetail/Banner"
 import ColorSelector from "../../components/ProductDetail/ColorSelector"
 import DynamicButton from "../../components/ProductDetail/DynamicButton"
 import Header from "../../components/ProductDetail/Header"
 import bannerImage from '../../components/image/apple-banner.png'
 import bigImage from '../../components/image/big-bigger.jpg'
+import CenterCard from "../../components/ProductDetail/CenterCard"
 
 const ProductDetail = () => {
   const phoneColors = [
@@ -62,9 +63,9 @@ const ProductDetail = () => {
       <Space h='xl' />
 
       <Group position="center">
-        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+        <CenterCard>
           <Text align="center" fw={500} size={28}>Big and Bigger.</Text>
-          <Image src={null} width={300} height={400} withPlaceholder />
+          <Image src={null} width={300} height={350} withPlaceholder />
 
           <Space h='sm' />
 
@@ -78,9 +79,9 @@ const ProductDetail = () => {
               <Text size={25} fw={700}>6.7″</Text>
             </Stack>
           </Group>
-        </Card>
+        </CenterCard>
         <Stack>
-          <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          <CenterCard mih={250}>
             <Text align="center" fw={500} fz='lg' color="dimmed">iPhone 14 Plus</Text>
             <Text
               align="center" fw={500} fz='xl'
@@ -88,85 +89,110 @@ const ProductDetail = () => {
             >
               The looongest battery life of any iPhone. Ever.
             </Text>
-          </Card>
-          <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          </CenterCard>
+          <CenterCard mih={250}>
             <Stack spacing={0} align="center">
               <Image src={null} width={150} height={150} withPlaceholder />
               <Text fw={500} fz='lg' color="dimmed">Ceramic Shield</Text>
               <Text fw={500} fz='xl'>Tougher than any smartphone glass.</Text>
             </Stack>
-          </Card>
+          </CenterCard>
         </Stack>
       </Group>
 
-      <Space h='sm' />
+      <Space h='md' />
 
       <Group position="center">
-        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+        <CenterCard mih={250}>
           <Text fw={700} fz='xl' variant="gradient" gradient={{ from: 'purple', to: 'pink', deg: 45 }}>Water resistance.</Text>
           <Text align="center">(Phew.)</Text>
-        </Card>
-        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+        </CenterCard>
+        <CenterCard>
           <Text fw={500} fz='lg' color="dimmed" align="center">Action mode</Text>
           <Text fw={500} fz='xl' color="grey" align="center">Shaky shots, stable video.</Text>
           <Space h='sm' />
-          <Image src={null} width={300} height={200} withPlaceholder />
-        </Card>
+          <Image src={null} width={300} height={150} withPlaceholder />
+        </CenterCard>
       </Group>
 
-      <Space h='sm' />
+      <Space h='md' />
 
       <Group position="center">
         <Stack spacing='xs'>
-          <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          <CenterCard mih={150}>
             <Text fw={700} fz='xl' variant="gradient" gradient={{ from: 'purple', to: 'pink', deg: 45 }}>A15 Bionic chip.</Text>
             <Text align="center">Fast that lasts.</Text>
-          </Card>
-          <Card shadow="sm" padding='lg' radius='xl' withBorder>
+          </CenterCard>
+          <CenterCard mih={150}>
             <Text align="center" fw={700} fz='xs' variant="gradient" gradient={{ from: 'purple', to: 'pink', deg: 45 }}>Superspeedy</Text>
             <Text align="center" fw={700} fz='xl' variant="gradient" gradient={{ from: 'purple', to: 'pink', deg: 45 }}>5G</Text>
-          </Card>
+          </CenterCard>
         </Stack>
-        <Card shadow="sm" padding='lg' radius='xl' withBorder>
-          <Text fw={500} fz='lg' color="dimmed" align="center">Pro-level camera.</Text>
-          <Text fw={500} fz='xl' color="grey" align="center">Whoa-level pics.</Text>
+        <CenterCard>
+          <Text fw={500} fz='lg' align="center">Pro-level camera.</Text>
+          <Text fw={500} fz='xl' align="center">Whoa-level pics.</Text>
           <Space h='sm' />
           <Image src={null} width={300} height={200} withPlaceholder />
-        </Card>
+        </CenterCard>
       </Group>
 
       <Space h='sm' />
 
       <Group position="center">
-        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+        <CenterCard>
           <Image src={null} height={150} withPlaceholder />
           <Text fw={500} fz='xl'>Emergency SOS via satellite</Text>
-        </Card>
-        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+        </CenterCard>
+        <CenterCard>
           <Image src={null} width={150} height={150} withPlaceholder />
           <Text fw={700} fz='xl'>Crash Detection</Text>
-        </Card>
+        </CenterCard>
       </Group>
 
       <Space h='sm' />
 
       <Group position="center">
-        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+        <CenterCard>
           <Text fw={500} fz='md' color="dimmed" align="center">Personalization</Text>
-          <Text fw={700} fz='xl' color="dimmed" align="center">Your photo. Your font.</Text>
-          <Text fw={700} fz='xl' color="dimmed" align="center">Your widgets. Your iPhone.</Text>
+          <Text fw={700} fz='xl' align="center">Your photo. Your font.</Text>
+          <Text fw={700} fz='xl' align="center">Your widgets. Your iPhone.</Text>
           <Image src={null} height={150} withPlaceholder />
-        </Card>
-        <Card shadow="sm" padding='lg' radius='xl' withBorder>
+        </CenterCard>
+        <CenterCard>
           <Image src={null} height={150} withPlaceholder />
           <Text fw={700} fz='xl' align="center">Sharper, smarter,</Text>
           <Text fw={700} fz='xl' align="center">snappier selfies.</Text>
-        </Card>
+        </CenterCard>
       </Group>
 
       <Space h={100} />
 
       <Title>Ways to save on iPhone.</Title>
+
+      <Space h='xl' />
+
+      <Group>
+        <CenterCard maw={350}>
+          <Text align="center" weight='bold' fz='xl' style={{ lineHeight: '1.1'}}>Get $200–$630 in credit toward iPhone 14 when you trade in iPhone 11 or higher.</Text>
+          <Space h='sm' />
+          <Anchor href="https://www.apple.com/us/shop/goto/trade_in" target="_blank">See what your device is worth</Anchor>
+          <Image src={null} width={250} height={200} withPlaceholder />
+        </CenterCard>
+        <CenterCard maw={350}>
+          <Text align="center" weight='bold' fz='xl' style={{ lineHeight: '1.1' }}>Save up to $800 on iPhone 14 with carrier deals at Apple.</Text>
+          <Space h='sm' />
+          <Anchor align="center" href="https://www.apple.com/us/shop/goto/buy_iphone/carrier_offers" target="_blank">See iPhone deals</Anchor>
+          <Image src={null} width={250} height={200} withPlaceholder />
+        </CenterCard>
+        <CenterCard maw={350}>
+          <Text align="center" weight='bold' fz='xl' style={{ lineHeight: '1.1' }}>Pay 0% APR over 24 months with Apple Card.†</Text>
+          <Space h='sm' />
+          <Text align="center" fz='lg' style={{ lineHeight: '1.1' }}>Choose Apple Card Monthly Installments when you check out.</Text>
+          <Space h='sm' />
+          <Anchor align="center" href="https://www.apple.com/apple-card/monthly-installments/" target="_blank">Learn more</Anchor>
+          <Image src={null} width={250} height={200} withPlaceholder />
+        </CenterCard>
+      </Group>
     </>
   )
 }
