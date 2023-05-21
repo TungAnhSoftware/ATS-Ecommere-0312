@@ -5,9 +5,8 @@ import {
   RouterProvider
 } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Page404 from './pages/Errors/404';
-import Home from './pages/Home';
-import ProductCart from './pages/ProductCart/ProductCart';
 
 export const ROUTER = {
   BASE: '/'
@@ -16,7 +15,7 @@ export const ROUTER = {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<AppLayout />}>
-      <Route path="/" element={<ProductCart />} />
+      <Route path="/" element={<ProductDetail />} />
       <Route path="*" element={<Page404 />} />
 
     </Route>
