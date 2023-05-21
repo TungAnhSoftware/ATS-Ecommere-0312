@@ -28,4 +28,6 @@ const AppRouter = () => {
   return <RouterProvider router={router} />;
 };
 
+console.log('dmm');
+
 export default AppRouter;
