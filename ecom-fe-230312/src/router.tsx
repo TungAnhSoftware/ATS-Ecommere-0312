@@ -7,17 +7,19 @@ import {
 import AppLayout from './layouts/AppLayout';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Page404 from './pages/Errors/404';
+import Home from './pages/Home';
 
 export const ROUTER = {
-  BASE: '/'
+  BASE: '/',
+  PRODUCT: '/product'
 } as const;
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<AppLayout />}>
-      <Route path="/" element={<ProductDetail />} />
+      <Route path={ROUTER.BASE} element={<Home />} />
+      <Route path={ROUTER.PRODUCT} element={<ProductDetail />} />
       <Route path="*" element={<Page404 />} />
-
     </Route>
   )
 );
