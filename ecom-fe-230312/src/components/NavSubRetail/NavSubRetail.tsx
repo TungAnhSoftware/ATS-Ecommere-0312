@@ -1,26 +1,26 @@
-import { Header, Flex, Title, Input, Anchor } from '@mantine/core';
+import { Header, Title, Input, Anchor, Grid, Center } from '@mantine/core';
 import { IconSearch } from '@tabler/icons-react';
 
 const NavSubRetail = () => {
   return (
-    <Header height={55} p="xs" style={{ backgroundColor: '#f2f2f2' }}>
-      <Flex
-        direction={{ base: 'column', sm: 'row' }}
-        gap={{ base: '30%', sm: '9%' }}
-        align={{ sm: 'center' }}
-        justify={{ sm: 'center' }}
-      >
-        <Title order={3} weight={500}>
-          Find a store
-        </Title>
-        <Input
-          style={{ width: '25%' }}
-          radius="md"
-          icon={<IconSearch />}
-          placeholder="Search by location, ZIP, or store name"
-        />
-        <Anchor href="#">Complete store list &gt; </Anchor>
-      </Flex>
+    <Header height={{md: 55, base: 55 }} p="xs" style={{ backgroundColor: '#f2f2f2' }}>
+        <Grid justify="center" align="center">
+          <Grid.Col sm={12} lg={2} offset={2}>
+            <Title order={3} weight={500} c="black">
+              Find a store
+            </Title>
+          </Grid.Col>
+          <Grid.Col sm={12} lg={3}>
+            <Input
+              radius="md"
+              icon={<IconSearch />}
+              placeholder="Search by location, ZIP, or store name"
+            />
+          </Grid.Col>
+          <Grid.Col sm={12} lg={3} offset={1}>
+            <Anchor href="#">Complete store list &gt; </Anchor>
+          </Grid.Col>
+        </Grid>
     </Header>
   );
 };
