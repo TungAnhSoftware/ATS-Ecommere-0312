@@ -1,4 +1,4 @@
-import { Button } from "@mantine/core"
+import { Button } from "@mantine/core";
 
 interface ButtonProps {
   title: string,
@@ -14,7 +14,7 @@ const DynamicButton = ({ title, onClick }: ButtonProps) => {
         cursor: "pointer",
       }}
     >{title}</Button>
-  )
-}
+  );
+};
 
-export default DynamicButton
+export default DynamicButton;

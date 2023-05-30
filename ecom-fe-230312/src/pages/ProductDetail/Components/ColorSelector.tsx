@@ -2,7 +2,7 @@ import { Group, Radio, Text } from "@mantine/core";
 import { useState } from "react";
 
 interface ColorSelectorProps {
-  colors: { id: string; label: string; color: string }[],
+  colors: { id: string; label: string; color: string; }[],
 }
 
 const ColorSelector = ({ colors: colors }: ColorSelectorProps) => {
@@ -22,7 +22,7 @@ const ColorSelector = ({ colors: colors }: ColorSelectorProps) => {
         </Group>
       </Radio.Group>
     </Group>
-  )
-}
+  );
+};
 
-export default ColorSelector
+export default ColorSelector;

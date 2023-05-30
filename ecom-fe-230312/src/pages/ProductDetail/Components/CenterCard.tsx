@@ -1,4 +1,4 @@
-import { Card, CardProps } from "@mantine/core"
+import { Card, CardProps } from "@mantine/core";
 
 const CenterCard = (props: CardProps) => {
     return (
@@ -9,7 +9,7 @@ const CenterCard = (props: CardProps) => {
             style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}
             {...props}>
         </Card>
-    )
-}
+    );
+};
 
-export default CenterCard
+export default CenterCard;

@@ -1,49 +1,16 @@
-import { Anchor, AspectRatio, BackgroundImage, Card, Container, Group, Image, Space, Stack, Text, Title } from "@mantine/core"
-import Banner from "../../components/ProductDetail/Banner"
-import ColorSelector from "../../components/ProductDetail/ColorSelector"
-import DynamicButton from "../../components/ProductDetail/DynamicButton"
-import Header from "../../components/ProductDetail/Header"
-import bannerImage from '../../components/image/apple-banner.png'
-import bigImage from '../../components/image/big-bigger.jpg'
-import CenterCard from "../../components/ProductDetail/CenterCard"
+import { Group, Image, Space, Stack, Text, Title } from "@mantine/core";
+import Banner from "./Components/Banner";
+import CenterCard from "./Components/CenterCard";
+import ColorSelector from "./Components/ColorSelector";
+import DynamicButton from "./Components/DynamicButton";
+import Header from "./Components/Header";
+import VerticalCard from "./Components/VerticalCard";
+import { designedToMakeADifference, phoneColors, waysToSaveOnIphone } from "./MockData";
 
 const ProductDetail = () => {
-  const phoneColors = [
-    {
-      id: 'midnight',
-      label: 'Midnight',
-      color: 'black'
-    },
-    {
-      id: 'starlight',
-      label: 'Starlight',
-      color: 'grey'
-    },
-    {
-      id: 'red',
-      label: 'Red',
-      color: 'red'
-    },
-    {
-      id: 'blue',
-      label: 'Blue',
-      color: 'blue'
-    },
-    {
-      id: 'purple',
-      label: 'Purple',
-      color: 'purple'
-    },
-    {
-      id: 'yellow',
-      label: 'Yellow',
-      color: 'yellow'
-    },
-  ];
-
   const handleBuyItem = () => {
     console.log("Buy now");
-  }
+  };
 
   return (
     <>
@@ -172,29 +139,42 @@ const ProductDetail = () => {
       <Space h='xl' />
 
       <Group>
-        <CenterCard maw={350}>
-          <Text align="center" weight='bold' fz='xl' style={{ lineHeight: '1.1'}}>Get $200–$630 in credit toward iPhone 14 when you trade in iPhone 11 or higher.</Text>
-          <Space h='sm' />
-          <Anchor href="https://www.apple.com/us/shop/goto/trade_in" target="_blank">See what your device is worth</Anchor>
-          <Image src={null} width={250} height={200} withPlaceholder />
-        </CenterCard>
-        <CenterCard maw={350}>
-          <Text align="center" weight='bold' fz='xl' style={{ lineHeight: '1.1' }}>Save up to $800 on iPhone 14 with carrier deals at Apple.</Text>
-          <Space h='sm' />
-          <Anchor align="center" href="https://www.apple.com/us/shop/goto/buy_iphone/carrier_offers" target="_blank">See iPhone deals</Anchor>
-          <Image src={null} width={250} height={200} withPlaceholder />
-        </CenterCard>
-        <CenterCard maw={350}>
-          <Text align="center" weight='bold' fz='xl' style={{ lineHeight: '1.1' }}>Pay 0% APR over 24 months with Apple Card.†</Text>
-          <Space h='sm' />
-          <Text align="center" fz='lg' style={{ lineHeight: '1.1' }}>Choose Apple Card Monthly Installments when you check out.</Text>
-          <Space h='sm' />
-          <Anchor align="center" href="https://www.apple.com/apple-card/monthly-installments/" target="_blank">Learn more</Anchor>
-          <Image src={null} width={250} height={200} withPlaceholder />
-        </CenterCard>
+        {waysToSaveOnIphone.map((item) =>
+          <VerticalCard
+            title={item['title']}
+            subtitle={item['subtitle']}
+            link={item['link']}
+            linkDesc={item['linkDesc']}
+            imgUrl={item['imgUrl']}
+          />
+        )}
       </Group>
-    </>
-  )
-}
 
-export default ProductDetail
+      <Space h={100} />
+
+      <Title>Designed to make a difference.</Title>
+
+      <Space h='xl' />
+
+      <Group>
+        {designedToMakeADifference.map((item) =>
+          <VerticalCard
+            title={item['title']}
+            subtitle={item['subtitle']}
+            link={item['link']}
+            linkDesc={item['linkDesc']}
+            imgUrl={item['imgUrl']}
+          />
+        )}
+      </Group>
+
+      <Space h={100} />
+
+      <Title>Which iPhone is right for you?</Title>
+
+      <Space h='xl' />
+    </>
+  );
+};
+
+export default ProductDetail;
