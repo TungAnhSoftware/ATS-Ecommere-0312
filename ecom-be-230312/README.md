@@ -10,4 +10,4 @@
 
 ## Build Maven
 * Run: ecom-be-230312 % mvn spring-boot:run
-* Clean: ecom-be-230312 % mvn clean package  
+* Clean: ecom-be-230312 % mvn clean package
