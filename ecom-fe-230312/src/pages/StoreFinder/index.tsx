@@ -1,4 +1,4 @@
-import NavSubRetail from '../../components/NavSubRetail/NavSubRetail';
+import NavSubRetail from '../../components/NavSubRetail';
 import CardForCarrousel from '../../components/CardCarrousel';
 import {
   Title,
@@ -398,3 +398,5 @@ function Content() {
 const StoreFinder = () => {
   return <NavSubRetail />;
 };
+
+export default StoreFinder;
