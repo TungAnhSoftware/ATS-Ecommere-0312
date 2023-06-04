@@ -1,13 +1,4 @@
-import pic from '../image/iphone14-yellow.webp';
-import {
-  Image,
-  Container,
-  Button,
-  Title,
-  Text,
-  Flex,
-  Box
-} from '@mantine/core';
+import { Image, Button, Title, Text, Flex, Box } from '@mantine/core';
 
 const CartItem = () => {
   return (
@@ -26,7 +17,7 @@ const CartItem = () => {
         <Flex gap="xs" justify="flex-start" align="left" direction="row">
           <Image width={130} src="../image/iphone-14-yellow.png" />
           <Flex gap="xs" justify="flex-start" align="left" direction="column">
-            <Title tt={'uppercase'}>Iphone</Title>
+            <Title tt="uppercase">Iphone</Title>
             <Flex justify="flex-start" align="left" direction="row">
               <Button
                 w={40}
@@ -67,7 +58,7 @@ const CartItem = () => {
               </Button>
             </Flex>
             <Flex justify="flex-start" align="left" direction="row">
-              <Text tt={'uppercase'} mr={10} fw={600}>
+              <Text tt="uppercase" mr={10} fw={600}>
                 Subtotal:
               </Text>
               <Text mr={3} fw={600}>
@@ -93,7 +84,7 @@ const CartItem = () => {
           marginTop: '10px'
         }}
       >
-        <Text tt={'uppercase'} mr={10} ml={10} mb={7} fw={600}>
+        <Text tt="uppercase" mr={10} ml={10} mb={7} fw={600}>
           Total:
         </Text>
         <Text mr={3} fw={600}>
