@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+security:
+  jwt:
+    token:
+      secret-key: 214125442A472D4B6150645367556B58703273357638792F423F4528482B4D62
