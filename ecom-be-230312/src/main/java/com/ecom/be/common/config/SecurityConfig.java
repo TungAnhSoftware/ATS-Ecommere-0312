@@ -1,5 +1,8 @@
 package com.ecom.be.common.config;
 
+import com.ecom.be.common.security.JwtAuthFilter;
+import com.ecom.be.common.security.UserAuthenticationEntryPoint;
+import com.ecom.be.common.security.UserAuthenticationProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

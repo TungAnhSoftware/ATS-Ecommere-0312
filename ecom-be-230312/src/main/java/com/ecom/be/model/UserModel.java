@@ -1,4 +1,4 @@
-package com.ecom.be.common.model;
+package com.ecom.be.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Size;
@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @Table(name = "app_user")
-public class User {
+public class UserModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

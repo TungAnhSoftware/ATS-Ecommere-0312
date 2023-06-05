@@ -1,4 +1,4 @@
-package com.ecom.be.common.dto;
+package com.ecom.be.model.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;

@@ -1,10 +1,10 @@
-package com.ecom.be.common.config;
+package com.ecom.be.common.security;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
-import com.ecom.be.common.dto.UserDto;
+import com.ecom.be.model.dto.UserDto;
 import com.ecom.be.service.UserService;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
