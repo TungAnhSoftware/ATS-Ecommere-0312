@@ -1,6 +1,6 @@
-package com.ecom.be.common.config;
+package com.ecom.be.common.security;
 
-import com.ecom.be.common.dto.ErrorDto;
+import com.ecom.be.model.dto.ErrorDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

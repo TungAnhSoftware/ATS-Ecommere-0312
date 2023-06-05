@@ -1,4 +1,4 @@
-package com.ecom.be.common.dto;
+package com.ecom.be.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,12 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserDto {
+public class CredentialsDto {
 
-    private Long id;
-    private String firstName;
-    private String lastName;
     private String login;
-    private String token;
+    private char[] password;
 
 }

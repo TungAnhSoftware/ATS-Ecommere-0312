@@ -1,4 +1,4 @@
-package com.ecom.be.common.config;
+package com.ecom.be.common.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
