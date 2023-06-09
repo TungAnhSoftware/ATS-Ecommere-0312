@@ -13,7 +13,7 @@ interface VerticalCardProps {
 const VerticalCard = ({ title, subtitle, link, linkDesc, imgUrl }: VerticalCardProps) => {
     return (
         <CenterCard maw={350}>
-            <Text align="center" weight='bold' fz='xl' style={{ lineHeight: '1.1' }}>{title}</Text>
+            <Text align="center" weight='bold' fz='xl' sx={{ lineHeight: '1.1', whiteSpace: 'pre-line' }}>{title}</Text>
             <Space h='sm' />
             <Text align="center" fz='lg' style={{ lineHeight: '1.1' }}>{subtitle}</Text>
             <Space h='sm' />

@@ -58,21 +58,21 @@ export const waysToSaveOnIphone = [
 
 export const designedToMakeADifference = [
     {
-        title: "Recycling, reimagined.",
+        title: "Recycling,\nreimagined.",
         subtitle: null,
         link: "https://www.apple.com/environment/",
         linkDesc: "See how iPhone reuses materials to conserve resources",
         imgUrl: null,
     },
     {
-        title: "Privacy. That’s iPhone.",
+        title: "Privacy.\nThat’s iPhone.",
         subtitle: null,
         link: "https://www.apple.com/privacy/",
         linkDesc: "Check out the latest privacy features for iPhone",
         imgUrl: null,
     },
     {
-        title: "iPhone for all.",
+        title: "iPhone\nfor all.",
         subtitle: null,
         link: "https://www.apple.com/accessibility/",
         linkDesc: "Discover helpful accessibility features like VoiceOver",
