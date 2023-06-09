@@ -12,13 +12,13 @@ interface VerticalCardProps {
 
 const VerticalCard = ({ title, subtitle, link, linkDesc, imgUrl }: VerticalCardProps) => {
     return (
-        <CenterCard maw={350}>
+        <CenterCard maw={350} h={500}>
             <Text align="center" weight='bold' fz='xl' sx={{ lineHeight: '1.1', whiteSpace: 'pre-line' }}>{title}</Text>
             <Space h='sm' />
             <Text align="center" fz='lg' style={{ lineHeight: '1.1' }}>{subtitle}</Text>
             <Space h='sm' />
             <ChevronLink link={link} text={linkDesc} />
-            <Image src={imgUrl} width={250} height={200} withPlaceholder />
+            <Image src={imgUrl} width={250} height={300} withPlaceholder />
         </CenterCard>
     );
 };

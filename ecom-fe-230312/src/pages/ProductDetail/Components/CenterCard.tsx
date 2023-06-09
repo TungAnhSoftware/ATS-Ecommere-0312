@@ -6,7 +6,11 @@ const CenterCard = (props: CardProps) => {
             padding='lg'
             radius='xl'
             withBorder
-            style={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}
+            style={{
+                display: 'flex',
+                alignItems: 'center',
+                flexDirection: 'column',
+            }}
             {...props}>
         </Card>
     );
