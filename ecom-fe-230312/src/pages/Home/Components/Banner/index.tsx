@@ -32,7 +32,7 @@ const Banner = () => {
               <Image
                 height={580}
                 src="https://www.apple.com/v/home/az/images/heroes/iphone-14-pro/hero_iphone14pro_spring__9xo85pm6sbmm_large.jpg"
-              ></Image>
+              />
             </Box>
           </Flex>
         </Box>
@@ -58,7 +58,7 @@ const Banner = () => {
               <Image
                 height={580}
                 src="https://www.apple.com/v/home/az/images/heroes/iphone-14/hero_iphone14_yellow__eun20sn4imi6_large.jpg"
-              ></Image>
+              />
             </Box>
           </Flex>
         </Box>
@@ -70,7 +70,7 @@ const Banner = () => {
                 width={193}
                 height={72}
                 src="https://www.apple.com/v/home/az/images/logos/apple-watch-series-8/hero_logo_apple_watch_series_8__ezarmmoobhg2_mediumtall.png"
-              ></Image>
+              />
             </Box>
 
             <Text mt={11} fz={31} align="center" c="white">
@@ -88,7 +88,7 @@ const Banner = () => {
             <Image
               height={580}
               src="https://www.apple.com/v/home/az/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_large.jpg"
-            ></Image>
+            />
           </Box>
         </Box>
       </SimpleGrid>
@@ -107,14 +107,14 @@ const Banner = () => {
               <Image
                 height={640}
                 src="https://www.apple.com/v/home/az/images/promos/wwdc23-announce/promo_wwdc23__b68ptht3mro2_large.jpg"
-              ></Image>
+              />
             </Box>
 
             <Image
               width={200}
               height={38}
               src="https://www.apple.com/v/home/az/images/logos/wwdc23-announce/promo_logo_wwdc23__gcsmmrgbhlme_medium.png"
-            ></Image>
+            />
             <Text mt={12} maw={415} fz={21} color="white" align="center">
               Apple Worldwide Developers Conference. Join us online
               June&nbsp;5‑9.
@@ -145,7 +145,7 @@ const Banner = () => {
               <Image
                 height={640}
                 src="https://www.apple.com/v/home/az/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg"
-              ></Image>
+              />
             </Box>
           </Flex>
         </Box>
@@ -167,7 +167,7 @@ const Banner = () => {
               <Image
                 height={640}
                 src="https://www.apple.com/v/home/az/images/promos/macbook-pro-14-and-16/promo_mbp__ek7p477bkp6q_large.jpg"
-              ></Image>
+              />
             </Box>
           </Flex>
         </Box>
@@ -189,7 +189,7 @@ const Banner = () => {
               <Image
                 height={640}
                 src="https://www.apple.com/v/home/az/images/promos/homepod/promo_homepod__f7jnolq94m2y_large.jpg"
-              ></Image>
+              />
             </Box>
           </Flex>
         </Box>
@@ -220,7 +220,7 @@ const Banner = () => {
               <Image
                 height={640}
                 src="https://www.apple.com/v/home/az/images/promos/airpods-pro-campaign/promo__sw58lbodkmqq_large.jpg"
-              ></Image>
+              />
             </Box>
           </Flex>
         </Box>
@@ -237,7 +237,7 @@ const Banner = () => {
               width={100}
               height={30}
               src="https://www.apple.com/v/home/az/images/logos/apple-card/logo__dcojfwkzna2q_medium.png"
-            ></Image>
+            />
             <Text w={290} pl={118} pr={118} fz={21} align="center">
               Get up to 3% Daily&nbsp;Cash back with every purchase.
             </Text>
@@ -251,7 +251,7 @@ const Banner = () => {
               <Image
                 height={640}
                 src="https://www.apple.com/v/home/az/images/promos/apple-card/tile__cauwwcyyn9hy_large.jpg"
-              ></Image>
+              />
             </Box>
           </Flex>
         </Box>
