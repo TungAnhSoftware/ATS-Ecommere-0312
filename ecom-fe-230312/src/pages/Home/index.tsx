@@ -1,7 +1,7 @@
 // Components
-import Banner from './components/Banner';
 import CarouselCard from './components/Slides';
 import { Anchor, Box, Text } from '@mantine/core';
+import Banner from './Banner';
 
 const Home = () => {
   return (
