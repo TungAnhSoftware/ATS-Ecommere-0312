@@ -19,7 +19,7 @@ export const ROUTER = {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<AppLayout />}>
-      <Route path={ROUTER.BASE} element={<Home />} />
+      <Route path={ROUTER.BASE} element={<ProductDetail />} />
       <Route path={ROUTER.PRODUCT} element={<ProductDetail />} />
       <Route path={ROUTER.STORE_FINDER} element={<StoreFinder />} />
       <Route path="*" element={<Page404 />} />

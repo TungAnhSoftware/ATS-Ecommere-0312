@@ -1,44 +1,12 @@
 import { Anchor, Group, Image, Space, Stack, Text, Title } from '@mantine/core';
-import Banner from '../../components/ProductDetail/Banner';
-import ColorSelector from '../../components/ProductDetail/ColorSelector';
-import DynamicButton from '../../components/ProductDetail/DynamicButton';
-import Header from '../../components/ProductDetail/Header';
-import CenterCard from '../../components/ProductDetail/CenterCard';
+import Banner from './Components/Banner';
+import CenterCard from './Components/CenterCard';
+import ColorSelector from './Components/ColorSelector';
+import DynamicButton from './Components/DynamicButton';
+import Header from './Components/Header';
+import { phoneColors } from './MockData';
 
 const ProductDetail = () => {
-  const phoneColors = [
-    {
-      id: 'midnight',
-      label: 'Midnight',
-      color: 'black'
-    },
-    {
-      id: 'starlight',
-      label: 'Starlight',
-      color: 'grey'
-    },
-    {
-      id: 'red',
-      label: 'Red',
-      color: 'red'
-    },
-    {
-      id: 'blue',
-      label: 'Blue',
-      color: 'blue'
-    },
-    {
-      id: 'purple',
-      label: 'Purple',
-      color: 'purple'
-    },
-    {
-      id: 'yellow',
-      label: 'Yellow',
-      color: 'yellow'
-    }
-  ];
-
   const handleBuyItem = () => {
     console.log('Buy now');
   };
