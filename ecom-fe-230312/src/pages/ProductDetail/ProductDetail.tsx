@@ -1,8 +1,7 @@
-import { Anchor, Group, Image, Space, Stack, Text, Title } from '@mantine/core';
+import { Anchor, Button, Group, Image, Space, Stack, Text, Title } from '@mantine/core';
 import Banner from './Components/Banner';
 import CenterCard from './Components/CenterCard';
 import ColorSelector from './Components/ColorSelector';
-import DynamicButton from './Components/DynamicButton';
 import Header from './Components/Header';
 import { phoneColors } from './MockData';
 
@@ -23,7 +22,14 @@ const ProductDetail = () => {
         <Space h="sm" />
         <Title order={2}>iPhone 14 and iPhone 14 Plus</Title>
         <Text fz="lg">From $799 or $33.29/mo. for 24 mo. before trade‑in*</Text>
-        <DynamicButton title="Buy" onClick={handleBuyItem} />
+        <Button
+          onClick={handleBuyItem}
+          radius="xl"
+          size="sm"
+          style={{ cursor: 'pointer' }}
+        >
+          Buy
+        </Button>
       </center>
 
       <Space h="xl" />
