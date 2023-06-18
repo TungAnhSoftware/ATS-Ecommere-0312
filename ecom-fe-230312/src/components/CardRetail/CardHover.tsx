@@ -1,4 +1,4 @@
-import { Anchor, Card, Flex, Title, Text, Image} from "@mantine/core"
+import { Anchor, Card, Flex, Title, Text, Image } from "@mantine/core"
 
 const CardHover = (props: { image: string, title: string, info: string, hrefDetail: String, href: string }) => {
     return (
@@ -6,9 +6,9 @@ const CardHover = (props: { image: string, title: string, info: string, hrefDeta
             <Card shadow="sm" radius="md" withBorder>
                 <Card.Section>
                     <Image
-                        src= {props.image}
+                        src={props.image}
                         height={426}
-                        width={486}
+                        width={'100%'}
                     />
                 </Card.Section>
                 <Flex
@@ -18,11 +18,13 @@ const CardHover = (props: { image: string, title: string, info: string, hrefDeta
                     wrap="wrap"
                     style={{ marginTop: '20px' }}
                 >
-                    <Text>{props.title}</Text>
-                    <Title order={2}>
+                    <Text c="black" >{props.title}</Text>
+                    <Title c="black" order={2}>
                         {props.info}
                     </Title>
-                    <Anchor href={props.href}>{props.hrefDetail}&gt; </Anchor>
+                    <Text c="black">
+                        <Anchor href={props.href}>{props.hrefDetail}&gt; </Anchor>
+                    </Text>
                 </Flex>
             </Card>
         </div>

@@ -72,8 +72,7 @@ const CarouselContent = () => {
         <Carousel
             height="331px"
             slideSize="33.333333%"
-            slidesToScroll={mobile ? 1 : 3}
-            style={{ width: '1020px' }}
+            style={{width: '100%'}}
             breakpoints={[
                 { maxWidth: 'md', slideSize: '50%' },
                 { maxWidth: 'sm', slideSize: '100%', slideGap: 0 },

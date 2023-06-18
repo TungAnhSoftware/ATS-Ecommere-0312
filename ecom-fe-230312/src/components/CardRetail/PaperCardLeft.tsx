@@ -1,22 +1,45 @@
-import { Anchor, Card, Center, Title, Flex, Paper, Image } from "@mantine/core"
+import { Anchor, Card, Center, Title, Flex, Image, Grid, Text } from "@mantine/core"
 
-const PaperCardLeft = (props: { image: string, title: string, info: string, hrefDetail: String ,href: string }) => {
-    return (
-        <Paper
-        shadow="xs"
-        p="xl"
-        style={{ height: '394px', width: '1000px', marginTop: '30px' }}
-      >
-        <Center style={{ float: 'left', height: '100%', width: '50%' }}>
+const PaperCardLeft = (props: { image: string, title: string, info: string, hrefDetail: String, href: string }) => {
+  return (
+    <Grid sx={{
+      marginTop: '30px',
+      width: '100%',
+      '@media (min-width: 64em)': {
+        height: '800px',
+      },
+      ' @media (min-width: 30em)': {
+        height: '400px'
+      }
+    }}>
+      <Grid.Col xs={12} sm={6} lg={6}>
+        <Center sx={{
+          height: '100%',
+          '@media (min-width: 64em)': {
+            width: '50%',
+          },
+          ' @media (min-width: 30em)': {
+            width: '100%',
+          }
+        }}>
           <Image
-            style={{ marginRight: '25px' }}
-            height={394}
-            width={500}
+            height={'400px'}
+            width={'100%'}
             src={props.image}
-            alt="image"
+            alt="With default placeholder" withPlaceholder
           />
         </Center>
-        <Card>
+      </Grid.Col>
+      <Grid.Col xs={12} sm={6} lg={6}>
+        <Card sx={{
+          height: '100%',
+          '@media (min-width: 64em)': {
+            width: '50%',
+          },
+          ' @media (min-width: 30em)': {
+            width: '100%',
+          }
+        }}>
           <Flex
             justify="center"
             align="center"
@@ -24,12 +47,16 @@ const PaperCardLeft = (props: { image: string, title: string, info: string, href
             wrap="wrap"
             style={{ marginTop: '100px' }}
           >
-            <Title order={4}>{props.title}</Title>
-            <Title order={2}>{props.info}</Title>
-            <Anchor href={props.href}>{props.hrefDetail} &gt; </Anchor>
+            <Title order={4} align="center">{props.title}</Title>
+            <Title order={2} align="center">{props.info}</Title>
+            <Text ta="center">
+              <Anchor href={props.href} >{props.hrefDetail}&gt; </Anchor>
+            </Text>
           </Flex>
         </Card>
-      </Paper>
-    )
+
+      </Grid.Col>
+    </Grid>
+  )
 };
 export default PaperCardLeft
