@@ -1,9 +1,10 @@
-import { Anchor, Button, Group, Image, Space, Stack, Text, Title } from '@mantine/core';
+import { Button, Group, Image, Space, Stack, Text, Title } from '@mantine/core';
 import Banner from './Components/Banner';
 import CenterCard from './Components/CenterCard';
 import ColorSelector from './Components/ColorSelector';
 import Header from './Components/Header';
-import { phoneColors } from './MockData';
+import VerticalCard from './Components/VerticalCard';
+import { designedToMakeDifference, phoneColors, waysToSaveOnIphone } from './MockData';
 
 const ProductDetail = () => {
   const handleBuyItem = () => {
@@ -212,73 +213,37 @@ const ProductDetail = () => {
       <Space h={100} />
 
       <Title>Ways to save on iPhone.</Title>
-
       <Space h="xl" />
+      <Group position='center'>
+        {waysToSaveOnIphone.map((item) => {
+          return (
+            <VerticalCard
+              title={item['title']}
+              desc={item['desc']}
+              link={item['link']}
+              text={item['text']}
+              imgUrl={null}
+            />
+          );
+        })}
+      </Group>
 
-      <Group>
-        <CenterCard maw={350}>
-          <Text
-            align="center"
-            weight="bold"
-            fz="xl"
-            style={{ lineHeight: '1.1' }}
-          >
-            Get $200–$630 in credit toward iPhone 14 when you trade in iPhone 11
-            or higher.
-          </Text>
-          <Space h="sm" />
-          <Anchor
-            href="https://www.apple.com/us/shop/goto/trade_in"
-            target="_blank"
-          >
-            See what your device is worth
-          </Anchor>
-          <Image src={null} width={250} height={200} withPlaceholder />
-        </CenterCard>
+      <Space h={100} />
 
-        <CenterCard maw={350}>
-          <Text
-            align="center"
-            weight="bold"
-            fz="xl"
-            style={{ lineHeight: '1.1' }}
-          >
-            Save up to $800 on iPhone 14 with carrier deals at Apple.
-          </Text>
-          <Space h="sm" />
-          <Anchor
-            align="center"
-            href="https://www.apple.com/us/shop/goto/buy_iphone/carrier_offers"
-            target="_blank"
-          >
-            See iPhone deals
-          </Anchor>
-          <Image src={null} width={250} height={200} withPlaceholder />
-        </CenterCard>
-
-        <CenterCard maw={350}>
-          <Text
-            align="center"
-            weight="bold"
-            fz="xl"
-            style={{ lineHeight: '1.1' }}
-          >
-            Pay 0% APR over 24 months with Apple Card.†
-          </Text>
-          <Space h="sm" />
-          <Text align="center" fz="lg" style={{ lineHeight: '1.1' }}>
-            Choose Apple Card Monthly Installments when you check out.
-          </Text>
-          <Space h="sm" />
-          <Anchor
-            align="center"
-            href="https://www.apple.com/apple-card/monthly-installments/"
-            target="_blank"
-          >
-            Learn more
-          </Anchor>
-          <Image src={null} width={250} height={200} withPlaceholder />
-        </CenterCard>
+      <Title>Designed to make a difference.</Title>
+      <Space h="xl" />
+      <Group position='center'>
+        {designedToMakeDifference.map((item) => {
+          return (
+            <VerticalCard
+              title={item['title']}
+              desc={item['desc']}
+              link={item['link']}
+              text={item['text']}
+              imgUrl={null}
+            />
+          );
+        })}
       </Group>
     </>
   );
