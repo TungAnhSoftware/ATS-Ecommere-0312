@@ -1,6 +1,7 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-/ecom-be-230312/target
-/ecom-be-230312/.gradle
-/ecom-be-230312/build
+ecom-be-230312/target/
+ecom-be-230312/.gradle/
+ecom-be-230312/build/
+ecom-be-230312/.idea/

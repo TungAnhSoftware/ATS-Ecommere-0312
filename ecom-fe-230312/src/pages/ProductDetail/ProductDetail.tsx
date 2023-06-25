@@ -88,6 +88,7 @@ const ProductDetail = () => {
             </Stack>
           </Group>
         </CenterCard>
+
         <Stack>
           <CenterCard mih={250}>
             <Text align="center" fw={500} fz="lg" color="dimmed">
@@ -181,7 +182,7 @@ const ProductDetail = () => {
         </Stack>
         <CenterCard>
           <Text fw={500} fz="lg" align="center">
-            Pro-level camera.
+            qq Pro-level camera.
           </Text>
           <Text fw={500} fz="xl" align="center">
             Whoa-level pics.

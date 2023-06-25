@@ -1,9 +1,9 @@
 package com.ecom.be.controller;
 
-import com.ecom.be.common.config.UserAuthenticationProvider;
-import com.ecom.be.common.dto.CredentialsDto;
-import com.ecom.be.common.dto.SignUpDto;
-import com.ecom.be.common.dto.UserDto;
+import com.ecom.be.common.security.UserAuthenticationProvider;
+import com.ecom.be.model.dto.CredentialsDto;
+import com.ecom.be.model.dto.SignUpDto;
+import com.ecom.be.model.dto.UserDto;
 import com.ecom.be.service.UserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,5 @@
 import { Box, SimpleGrid } from '@mantine/core';
+
 import SingleBox from '../SingleBox';
 
 const Banner = () => {

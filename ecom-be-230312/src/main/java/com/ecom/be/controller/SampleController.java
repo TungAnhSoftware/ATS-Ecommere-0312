@@ -24,7 +24,7 @@ public class SampleController {
         return ResponseEntity.ok(samples);
     }
 
-    @PostMapping(path = "/put")
+    @PostMapping(path = "/addSample")
     public void putSample(@RequestBody SampleModel sampleModel) {
         sampleService.putSample(sampleModel);
     }
