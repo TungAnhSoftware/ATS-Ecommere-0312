@@ -138,14 +138,14 @@ const ProductDetail = () => {
       <Title>Ways to save on iPhone.</Title>
       <Space h="xl" />
       <Group position='center'>
-        {waysToSaveOnIphone.map((item) => {
+        {waysToSaveOnIphone.map(({ title, subtitle, link, linkDesc, imgUrl }) => {
           return (
             <VerticalCard
-              title={item['title']}
-              subtitle={item['desc']}
-              link={item['link']}
-              linkDesc={item['text']}
-              imgUrl={null}
+              title={title}
+              subtitle={subtitle}
+              link={link}
+              linkDesc={linkDesc}
+              imgUrl={imgUrl}
             />
           );
         })}
@@ -156,14 +156,14 @@ const ProductDetail = () => {
       <Title>Designed to make a difference.</Title>
       <Space h="xl" />
       <Group position='center'>
-        {designedToMakeDifference.map((item) => {
+        {designedToMakeDifference.map(({ title, subtitle, link, linkDesc, imgUrl }) => {
           return (
             <VerticalCard
-              title={item['title']}
-              subtitle={item['desc']}
-              link={item['link']}
-              linkDesc={item['text']}
-              imgUrl={null}
+              title={title}
+              subtitle={subtitle}
+              link={link}
+              linkDesc={linkDesc}
+              imgUrl={imgUrl}
             />
           );
         })}
