@@ -1,4 +1,4 @@
-import { Button, Group, Image, Space, Stack, Text, Title } from '@mantine/core';
+import { Anchor, Button, Center, Group, Image, Space, Stack, Text, Title } from '@mantine/core';
 import Banner from './Components/Banner';
 import CenterCard from './Components/CenterCard';
 import ColorSelector from './Components/ColorSelector';
@@ -137,37 +137,41 @@ const ProductDetail = () => {
 
       <Title>Ways to save on iPhone.</Title>
       <Space h="xl" />
-      <Group position='center'>
-        {waysToSaveOnIphone.map(({ title, subtitle, link, linkDesc, imgUrl }) => {
-          return (
-            <VerticalCard
-              title={title}
-              subtitle={subtitle}
-              link={link}
-              linkDesc={linkDesc}
-              imgUrl={imgUrl}
-            />
-          );
-        })}
-      </Group>
+      <Center>
+        <Group>
+          {waysToSaveOnIphone.map(({ title, subtitle, link, linkDesc, imgUrl }) => {
+            return (
+              <VerticalCard
+                title={title}
+                subtitle={subtitle}
+                link={link}
+                linkDesc={linkDesc}
+                imgUrl={imgUrl}
+              />
+            );
+          })}
+        </Group>
+      </Center>
 
       <Space h={100} />
 
       <Title>Designed to make a difference.</Title>
       <Space h="xl" />
-      <Group position='center'>
-        {designedToMakeDifference.map(({ title, subtitle, link, linkDesc, imgUrl }) => {
-          return (
-            <VerticalCard
-              title={title}
-              subtitle={subtitle}
-              link={link}
-              linkDesc={linkDesc}
-              imgUrl={imgUrl}
-            />
-          );
-        })}
-      </Group>
+      <Center>
+        <Group>
+          {designedToMakeDifference.map(({ title, subtitle, link, linkDesc, imgUrl }) => {
+            return (
+              <VerticalCard
+                title={title}
+                subtitle={subtitle}
+                link={link}
+                linkDesc={linkDesc}
+                imgUrl={imgUrl}
+              />
+            );
+          })}
+        </Group>
+      </Center>
     </>
   );
 };
