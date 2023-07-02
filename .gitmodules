@@ -1,0 +1,3 @@
+[submodule "ecom-be-230312-microservices"]
+	path = ecom-be-230312-microservices
+	url = git@github.com:TungAnhSoftware/ecom-be-230312-microservices.git
